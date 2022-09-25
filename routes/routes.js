@@ -635,6 +635,8 @@ router
                         company_u: user.company_u,
                         phone_u: user.phone_u,
                         address_u: user.address_u,
+                        zipCode_u: user.zipCode_u,
+                        country_u: user.country_u,
                         siret_u: user.siret_u
                     }
                     const token = jwt.sign({ user: body }, process.env.JWT_SECRET, { expiresIn: '30d' })
